@@ -1,0 +1,19 @@
+{
+    "name": "Hacker News Test",
+    "manifest_version": 2,
+    "version": "1.5.2",
+    "description": "test plugin",
+    "content_scripts": [ {
+      "all_frames": true,
+      "js": ["script.js"],
+      "matches": [
+            "http://news.ycombinator.com/*",
+            "http://news.ycombinator.net/*",
+            "http://hackerne.ws/*",
+            "http://news.ycombinator.org/*",
+            "https://news.ycombinator.com/*",
+            "https://news.ycombinator.net/*",
+            "https://hackerne.ws/*",
+            "https://news.ycombinator.org/*" ]
+      }]
+}
